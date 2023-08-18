@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lakshmi interior</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;
+    background: #e91e1e}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    .w3-sidebar w3-bar-block w3-small w3-hide-small w3-center{
+      background-color: white;
+    }
+    .slider-container {
+    width: 100%;
+ 
+    
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slider {
+    display: flex;
+    width: 100%; /* 3 images side by side */
+    animation: slide 20s infinite linear;
+  }
+
+  .slide {
+    flex: 1;
+    min-width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .slide.slide1 {
+    background-image: url('/lakshmi-photo2.jpg');
+   
+  }
+
+  .slide.slide2 {
+    background-image: url('/20230610_212724.jpg');
+  }
+
+  .slide.slide3 {
+    background-image: url('/lakshmi-photo.jpg');
+  }
+
+  @keyframes slide {
+    0%, 100% {
+      transform: translateX(0);
+     
+    }
+    33.33% {
+      transform: translateX(-100%);
+    }
+    66.66% {
+      transform: translateX(-200%);
+    }
+
+}
+/* ahas */
+.order-button{
+  
+  display: flex;
+  position: fixed;
+  top: 200px;
+  right: 30px;
+  height: 45px;
+  width: 150px;
+  background-color: rgb(199, 37, 37);
+  margin-left: 70px;
+  border-radius: 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 5px;
+ 
+}
+button a{
+  margin-left: 20px;
+  margin-bottom: 2px;
+  color: rgb(34, 155, 155);
+  white-space: nowrap;
+  font-size: xx-large;
+  margin-top: -5px;
+  margin-left: 2px;
+  
+}
+    </style>
+  </head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="/ll.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar" style="background-color: bisque;">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo" style="color: rgb(236, 236, 5); font-size: 50px;"><span class="w3-hide-small"></span> LAKSHMI INTERIOR</h1>
+    <p style="color: blue; font-size: 20px;">THINK DESIGN & BUILD</p>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide slide1"></div>
+        <div class="slide slide2"></div>
+        <div class="slide slide3"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p style="color: rgb(244, 213, 9);">We transform spaces into cozy havens, combining style and function for your unique lifestyle. From classic elegance to modern flair, we create designs that match your taste. Our work brings nature inside and uses eco-friendly ideas. We mix city vibes with relaxation, crafting comfy family areas. Whether you like bright boho or calming minimalism, we design spaces that fit you. We also make use of technology for smart living. With us, your home becomes a canvas of creativity, reflecting your personality. Join us to turn your space into something special, where your dreams and our designs meet.
+   
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+     
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+    <button  class="order-button"><a href="tel:+91-8709134632" style="color: white; text-decoration: none;">Call Me</a><span></span>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section" style="position: fixed; display: flex;"><a href="tel:+91-8709134632" style="color: white; text-decoration: none;"></a>
+      <i class="fa fa-download"></i>  Call Me
+    </button>
+    
+    <!-- Grid for pricing tables -->
+
+    
+    <!-- Testimonials -->
+    
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos"  style="color: #e91e1e;">
+    <h2 class="w3-text-light-grey">Gallary</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/l4.jpg" style="width:100%">
+        <img src="/l3.jpg" style="width:100%">
+        <img src="/laksh.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/laksh.jpg" style="width:100%">
+        <img src="/20230610_212724.jpg" style="width:100%">
+      
+        <img src="lakshmi-photo.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i><a href="https://maps.app.goo.gl/kevKXQ661h6iprBE8?g_st=ic" style="color: white; text-decoration: none;">A wing 23,Logix Technova,
+        Noida Sector-132, Uttar
+        pradesh,201301</a></p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i><a href="tel:+91-8709134632" style="color: white; text-decoration: none;">+91-8709134632</a></p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i>Email : juyalmukesh19@gmail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
